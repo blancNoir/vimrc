@@ -210,8 +210,11 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 map <space> /
 map <c-space> ?
 
-" Map kj to exit insert mode
-imap kj <Esc>
+" Map jj to exit insert mode
+imap jj <Esc>
+
+" Toggle line wrapping
+map <F9> :set wrap!<cr>
 
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
