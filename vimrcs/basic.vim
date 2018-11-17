@@ -129,6 +129,9 @@ endif
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+" Avoid extraneous whitespace
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
