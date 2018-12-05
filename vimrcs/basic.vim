@@ -23,18 +23,24 @@
 "    -> Spell checking
 "    -> Misc
 "    -> Helper functions
-"
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set PATH for vim use, YCM plugin gets confused otherwise
+let $PATH='/usr/bin:/usr/loca/bin:/bin:/usr/sbin:/sbin'
+
 " Sets how many lines of history VIM has to remember
 set history=500
 
 " Set line numbers
 set number
+
+" Set relative line number
+set relativenumber
 
 " Enable filetype plugins
 filetype plugin on
@@ -130,7 +136,7 @@ endif
 set foldcolumn=1
 
 " Avoid extraneous whitespace
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+" au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
