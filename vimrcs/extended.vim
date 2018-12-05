@@ -30,7 +30,7 @@ set guioptions-=L
 " Colorscheme
 set background=dark
 colorscheme dracula
-
+let g:airline_theme='dracula'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
